@@ -1,0 +1,112 @@
+.cuerpoDePagina{
+  background-image: url('img/background1.jpg');
+  /*background-repeat: no-repeat;*/
+}
+
+.aside_izq{
+  width: 15%;
+  float: left;
+  background:  #3C997B;/*#FF9E00;*/
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.aside_izq div{
+  margin-bottom: 20px;
+  background: #ffffff;
+ 
+}
+
+.aside_izq div img{
+  width: 100%;
+}
+
+.main .articles{
+    width: 98%;
+    margin-right: 1%;
+    margin-left: 1%;
+    float: left;
+    margin-bottom: 50%;
+
+    z-index: -5;
+}
+
+.main .articles article{
+  padding: 20px;
+  background: #ffffff;
+  margin-bottom: 20px;
+  border: 3px solid #000000;
+  /*border-radius: 10px;*/
+  
+}
+
+.aside_der{
+  width: 25%;
+  float: left;
+  background: #000000;/*#FF9E00;*/
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.aside_der div{
+  margin-bottom: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.aside_der div img{
+  width: 100%;
+}
+
+div.ofertas{
+  float: left;
+  margin-left: 5%;
+}
+
+div.ofertas .card{
+  float: left;
+}
+
+.carousel-item *{
+  /************************Animacion para articulos****************************/
+  -webkit-animation-name: MOVE-ARTICLE;
+	-webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+	/*-webkit-animation-iteration-count: infinite;*/
+  animation-name: MOVE-ARTICLE;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+}
+
+.titulo_ofertas{
+  padding: 10px; 
+  background: #FA9B3D; 
+  text-decoration: underline;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-family: Consolas, monaco, monospace;
+}
+
+@-webkit-keyframes MOVE-ARTICLE {
+	from {
+    -webkit-transform: translateX(-50px);
+    opacity: 0.2;
+	}
+	to { 
+    -webkit-transform: translateX(0);
+    opacity: 1;
+	}
+}
+
+@keyframes MOVE-ARTICLE {
+	from {
+    -webkit-transform: translateX(-50px);
+    opacity: 0.2;
+	}
+	to { 
+    -webkit-transform: translateX(0);
+    opacity: 1;
+	}
+}
